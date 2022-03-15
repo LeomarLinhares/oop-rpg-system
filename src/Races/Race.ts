@@ -1,8 +1,4 @@
-interface IRace {
-  name: string;
-  dexterity: number;
-  maxLifePoints: number;
-}
+import IRace from './interfaces/IRace';
 
 abstract class Race implements IRace {
   static _createdRacesInstances = 0;
@@ -22,7 +18,7 @@ abstract class Race implements IRace {
     return this._dexterity;
   }
 
-  static get createdRacesInstances(): number {
+  static get createdRacesInstances(): () => number {
     throw new Error('Not implemented');
   }
 
