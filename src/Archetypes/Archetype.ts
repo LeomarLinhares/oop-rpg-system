@@ -26,7 +26,7 @@ abstract class Archetype {
 
   abstract get energyType(): EnergyType;
 
-  static get createdArchetypeInstances(): number {
+  static get createdArchetypeInstances(): () => number {
     throw new Error('Not implemented');
   }
 }
