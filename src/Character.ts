@@ -56,4 +56,18 @@ abstract class Character implements Fighter {
   special(enemy: Fighter): void {
     enemy.receiveDamage(this._strength + enemy.defense);
   }
+
+  get lifePoints(): number {
+    return this._lifePoints;
+  }
+
+  get strength(): number {
+    return this._strength;
+  }
+
+  get defense(): number {
+    return this._defense;
+  }
 }
+
+export default Character;
