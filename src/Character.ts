@@ -36,7 +36,7 @@ class Character implements Fighter {
   }
 
   attack(enemy: Fighter): void {
-    enemy.receiveDamage(this._strength);
+    enemy.receiveDamage(this.strength);
   }
 
   levelUp(): void {
@@ -67,6 +67,13 @@ class Character implements Fighter {
 
   get defense(): number {
     return this._defense;
+  }
+
+  get energy(): Energy {
+    return {
+      type_: this._energy.type_,
+      amount: this._energy.amount,
+    };
   }
 }
 
