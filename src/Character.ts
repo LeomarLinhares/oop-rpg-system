@@ -75,6 +75,10 @@ class Character implements Fighter {
       amount: this._energy.amount,
     };
   }
+
+  get dexterity(): number {
+    return this._dexterity;
+  }
 }
 
 export default Character;
