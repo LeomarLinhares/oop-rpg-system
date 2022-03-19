@@ -36,7 +36,7 @@ abstract class Character implements Fighter {
   }
 
   attack(enemy: Fighter): void {
-    
+    enemy.receiveDamage(this._strength);
   }
 
   levelUp(): void {
