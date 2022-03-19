@@ -4,7 +4,7 @@ import Archetype, { Mage } from './Archetypes';
 import Energy from './Energy';
 import getRandomInt from './utils';
 
-abstract class Character implements Fighter {
+class Character implements Fighter {
   readonly race: Race;
   readonly archetype: Archetype;
   private _maxLifePoints: number;
