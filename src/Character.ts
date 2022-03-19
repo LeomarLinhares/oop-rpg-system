@@ -54,6 +54,6 @@ abstract class Character implements Fighter {
   }
 
   special(enemy: Fighter): void {
-    
+    enemy.receiveDamage(this._strength + enemy.defense);
   }
 }
