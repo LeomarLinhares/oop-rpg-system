@@ -13,7 +13,7 @@ class PVE extends Battle {
     this.environment.forEach((monster) => {
       monster.receiveDamage(this.player.strength);
       this.player.receiveDamage(monster.strength);
-    })
+    });
     return this.player.lifePoints === -1 ? -1 : 1;
   }
 }
