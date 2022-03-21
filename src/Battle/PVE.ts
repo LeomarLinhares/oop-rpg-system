@@ -11,8 +11,8 @@ class PVE extends Battle {
 
   override fight(): number {
     this.environment.forEach((monster) => {
-      monster.receiveDamage(this.player.strength);
-      this.player.receiveDamage(monster.strength);
+      this.player.attack(monster);
+      monster.attack(this.player);
     });
     return this.player.lifePoints === -1 ? -1 : 1;
   }
