@@ -3,11 +3,11 @@ import Monster from './Monster';
 import Dragon from './Dragon';
 import Battle, { PVE, PVP } from './Battle';
 
-const player1 = new Character('');
-const player2 = new Character('');
-const player3 = new Character('');
+const player1 = new Character('Leomar Linhares');
+const player2 = new Character('Gabriel Vicente');
+const player3 = new Character('Matheus Affonso');
 
-for (let index = 0; index < 20; index + 1) player1.levelUp();
+for (let index = 0; index < 20; index += 1) player1.levelUp();
 
 const monster1 = new Monster();
 const monster2 = new Dragon();
